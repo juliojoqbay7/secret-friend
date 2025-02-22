@@ -237,5 +237,4 @@ The main logic of the application resides in the `Main.ts` component. Here's a s
 * **Flexbox:** Used extensively for creating flexible and responsive layouts.
 * **Media Queries:** Used to adapt the layout to different screen sizes (responsiveness).
 * **Animations:** Used to add animations on images.
-
-This detailed README provides a comprehensive overview of your project, from conception and technologies used to internal logic, code structure, and usage instructions. It is suitable for recruiters, professors, and other developers who want to understand and contribute to your project. Remember to replace the placeholders (like GitHub links, GIF animation, etc.) with your actual values. A good README makes a *big* difference in the presentation of a project!
+  
