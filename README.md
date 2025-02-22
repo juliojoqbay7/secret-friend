@@ -174,7 +174,7 @@ The main logic of the application resides in the `Main.ts` component. Here's a s
         * Calls `updateUI()` to update the button states.
         * Displays a success message.
 
-4. **Drawing the Secret Santa:**
+4. **Drawing the Secret Friend:**
     * The user clicks the "Draw Secret Friend" button.
     * The button's click event listener calls the `drawSecretFriend()` function.
     * `drawSecretFriend()`:
