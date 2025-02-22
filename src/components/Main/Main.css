@@ -14,7 +14,7 @@
     justify-content: space-between; /* Distribui o espaço entre as colunas */
     gap: 2rem;             /* Espaçamento entre as colunas (imagens e conteúdo) */
     width: 100%;          /* Ocupa toda a largura disponível dentro do .main */
-    max-width: 1200px;   /* Largura máxima (reutilizando a classe container) */
+    max-width: 1440px;   /* Largura máxima (reutilizando a classe container) */
     padding: 2rem 1rem;    /* Padding nas laterais (reutilizando a classe container) */
   }
   
@@ -22,16 +22,45 @@
   .illustration {
     max-width: 100%;
     height: auto;
+    animation: float 3s ease-in-out infinite; /* Adiciona a animação */
   }
+
+  @keyframes float {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px); /* Ajuste este valor para controlar a amplitude do movimento */
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .illustration:hover {
+    animation: pulse 0.5s ease-in-out ; /*Adiciona o efeito*/
+}
+
+@keyframes pulse {
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.05);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
   
-  .illustration-left,
+  
   .illustration-right {
-    width: 30%; /* Largura das colunas de ilustração */
+    width: 50%; /* Largura das colunas de ilustração */
   }
   
   /* Estilos para a coluna de conteúdo principal */
   .content {
-    width: 40%; /* Largura da coluna de conteúdo */
+    width: 50%; /* Largura da coluna de conteúdo */
     display: flex;         /* Flex container para organizar as seções */
     flex-direction: column;  /* Organiza as seções verticalmente */
     gap: 1rem;            /* Espaçamento entre as seções */
@@ -70,6 +99,7 @@
   }
   
   #add-participant-container button {
+    align-self: center;
     padding: 0.5rem 1rem;
     background-color: var(--dracula-green);
     color: var(--dracula-background);
@@ -92,6 +122,7 @@
   }
   
   #draw-result-container button {
+    align-self: center;
     padding: 0.5rem 1rem;
     background-color: var(--dracula-purple); /* Cor original */
     color: var(--dracula-background);
@@ -245,6 +276,7 @@
   
     .content {
       width: 100%; /* Conteúdo ocupa toda a largura */
+      padding-top: 1rem;;
     }
     /*Centraliza o botão*/
      #reveal-container button, #reset-button{
