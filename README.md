@@ -1,5 +1,7 @@
 # Secret Friend Online &#x1F381; &#x1F389;
 
+![Secret Friend](/public/secret-friend.svg)
+
 [![Deploy Status](https://github.com/juliojoqbay7/secret-friend/actions/workflows/pages/pages-build-deployment/badge.svg)](https://juliojoqbay7.github.io/secret-friend/)
 
 A simple, modern, and responsive web application for running Secret Santa (or Gift Exchange) drawings online. Built with **Vite**, **TypeScript**, **HTML**, and **CSS**, this project is perfect for those who want to practice web programming, create a quick and fun drawing, or learn about the technologies used.
@@ -84,8 +86,8 @@ The project is organized as follows:
 ├── node_modules/       (npm dependencies - you don't normally modify this)
 ├── public/             (Static assets - images, icons, etc.)
 │   ├── dev.svg
-│   ├── dev.svg
-│   └── online-collaboration.svg
+│   ├── online-collaboration.svg
+│   └── secret-friend.svg
 ├── src/                (The application's source code)
 │   ├── components/     (Reusable components)
 │   │   ├── Footer/     # Footer
