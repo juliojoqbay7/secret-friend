@@ -1,0 +1,60 @@
+@import "./reset.css";
+
+
+:root {
+    --dracula-background: #282a36;
+    --dracula-current-line: #44475a;
+    --dracula-foreground: #f8f8f2;
+    --dracula-comment: #6272a4;
+    --dracula-cyan: #8be9fd;
+    --dracula-green: #50fa7b;
+    --dracula-orange: #ffb86c;
+    --dracula-pink: #ff79c6;
+    --dracula-purple: #bd93f9;
+    --dracula-red: #ff5555;
+    --dracula-yellow: #f1fa8c;
+  
+    /* Cores adicionais (ajustadas para um contraste melhor) */
+    --dracula-background-light: #383a46; /* Um pouco mais claro para fundos de seções */
+    --dracula-foreground-dark: #d4d4d4;  /* Um pouco mais escuro para textos em fundos claros */
+    --dracula-border-color: #6272a4; /* Cor para bordas */
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem; /* Adiciona um padding nas laterais */
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+    background-color: var(--dracula-background);
+    color: var(--dracula-foreground);
+    font-family: 'Fira Code', monospace;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+#app {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.error-page {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 100px);
+  height: 100%;
+}
+
+
+

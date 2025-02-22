@@ -1,0 +1,133 @@
+/* src/components/Header/Header.css */
+
+.header {
+    background-color: var(--dracula-current-line);
+    padding: 1rem;
+    border-bottom: 1px solid var(--dracula-border-color);
+}
+
+.main-nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Mantém o espaço entre os elementos */
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative; /* Importante para o posicionamento absoluto do menu */
+}
+
+.header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--dracula-cyan);
+    margin: 0;
+    order: 1; /* Título sempre à esquerda */
+
+}
+
+/* Botão Hambúrguer */
+.menu-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none; /* Oculto em telas maiores */
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    z-index: 3;
+    order: 3; /* Botão sempre por último (mas invisível em telas grandes) */
+}
+/*Barras*/
+.menu-toggle .bar {
+    background-color: var(--dracula-foreground);
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Animação do Botão */
+.menu-toggle.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+    background-color: var(--dracula-red);
+}
+
+.menu-toggle.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.menu-toggle.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+    background-color: var(--dracula-red);
+}
+
+/* Menu (Estilos para telas maiores) */
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; /* Flexbox para alinhar os itens */
+    align-items: center; /* Alinhamento vertical */
+    order: 2; /* O menu fica entre o título e o botão (em telas maiores) */
+}
+
+.menu li {
+    margin-left: 1rem; /* Espaço entre os itens do menu */
+}
+
+.menu li a {
+    color: var(--dracula-foreground);
+    text-decoration: none;
+    padding: 0.5rem; /* Padding para tornar a área clicável maior */
+    display: block; /* Faz o link ocupar todo o espaço do <li> */
+}
+
+.menu li a:hover {
+    color: var(--dracula-cyan);
+}
+
+
+
+/* Media Query (para telas menores) */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+
+    .menu {
+        position: fixed; /* Fixa o menu em relação à janela do navegador */
+        left: 0;
+        top: 0; /* Começa no topo da tela */
+        width: 100vw; /* 100% da largura da viewport */
+        height: 100vh; /* 100% da altura da viewport */
+        background-color: var(--dracula-background); /* Cor de fundo escura */
+        flex-direction: column;
+        justify-content: center; /* Centraliza os itens verticalmente */
+        align-items: center; /* Centraliza os itens horizontalmente */
+        text-align: center;
+        z-index: 2;
+        transform: translateX(100%); /* Começa fora da tela (à direita) */
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1.0); /* Animação suave */
+        display: none;
+        overflow-y: auto; /* Adiciona scroll se o conteúdo do menu for grande */
+    }
+
+    .menu.active {
+        transform: translateX(0); /* Move o menu para a tela */
+        display: flex;
+    }
+
+    .header h1 {
+        font-size: 1.5rem;
+    }
+    .menu li {
+        margin: 1rem 0; /* Espaçamento entre os itens do menu */
+    }
+    .menu li a {
+       font-size: 1.2rem;
+    }
+}
