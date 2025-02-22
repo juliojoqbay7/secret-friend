@@ -76,6 +76,7 @@ If you want to run this project locally (on your computer), follow these steps:
 
 The project is organized as follows:
 
+```
 secret-friend/
 ├── node_modules/       (npm dependencies - you don't normally modify this)
 ├── public/             (Static assets - images, icons, etc.)
@@ -116,6 +117,7 @@ secret-friend/
 ├── package.json
 ├── tsconfig.json
 └── vite.config.ts
+```
 
 **Description:**
 
