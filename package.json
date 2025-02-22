@@ -1,4 +1,5 @@
 {
+  "homepage": "https://juliojoqbay7.github.io/secret-friend",
   "name": "secret-friend",
   "private": true,
   "version": "0.0.0",
@@ -6,7 +7,8 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "tsc && vite build && gh-pages -d dist"
   },
   "devDependencies": {
     "gh-pages": "^6.3.0",
