@@ -1,15 +1,20 @@
 // src/pages/About/About.ts
 
 import './About.css';
+import collaboration from "/online-collaboration.svg";
 
 function About() {
   const aboutPage = document.createElement('div');
   aboutPage.classList.add('about-page');
 
   aboutPage.innerHTML = `
-    <div class="container">  
-        <section class="about-content">
-        <h1>Sobre o Amigo Secreto</h1>
+    <div class="container about-container">
+
+        <div class="about-image">
+            <img src="${collaboration}" alt="Ilustração Sobre" class="illustration">
+        </div>
+        <div class="about-content">
+            <h1>Sobre o Amigo Secreto</h1>
             <p>
                 Este projeto foi desenvolvido como parte de um curso de programação web, com o objetivo de praticar os fundamentos de HTML, CSS, e JavaScript/TypeScript, utilizando o Vite como ferramenta de build.
             </p>
@@ -19,7 +24,6 @@ function About() {
             <p>
                Este aplicativo web simplifica o processo de sorteio, permitindo que os participantes adicionem seus nomes, realizem o sorteio de forma aleatória e, em seguida, revelem seus amigos secretos de maneira privada.
             </p>
-
             <h2>Tecnologias Utilizadas</h2>
             <div class="tech-icons">
                 <i class="devicon-html5-plain" title="HTML5"></i>
@@ -34,9 +38,11 @@ function About() {
                 O código fonte completo deste projeto está disponível no GitHub. Você pode clonar o repositório, explorar o código, fazer modificações e até mesmo contribuir com melhorias!
             </p>
             <a href="https://github.com/juliojoqbay7/secret-friend" class="github-link" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i> Ver no GitHub
+                <i class="fa-brands fa-github"></i> Ver Código
             </a>
-        </section>
+        </div>
+
+
     </div>
   `;
 
