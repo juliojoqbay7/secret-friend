@@ -16,7 +16,7 @@ function About() {
         <div class="about-content">
             <h1>Sobre o Amigo Secreto</h1>
             <p>
-                Este projeto foi desenvolvido como parte de um curso de programação web, com o objetivo de praticar os fundamentos de HTML, CSS, e JavaScript/TypeScript, utilizando o Vite como ferramenta de build.
+                Este projeto foi desenvolvido como parte de um curso de programação web da Alura, em parceira com o programa ONE (Oracle Next Education), com o objetivo de praticar os fundamentos de HTML, CSS, e JavaScript. Eu optei por utilizar o Vite como ferramenta de build e o TypeScript para maior segurança do código.
             </p>
             <p>
                 O Amigo Secreto (ou Amigo Oculto) é uma brincadeira tradicional em que um grupo de pessoas troca presentes de forma anônima. Cada participante sorteia o nome de outra pessoa para presentear, e o segredo só é revelado no dia da troca.
@@ -31,6 +31,7 @@ function About() {
                 <i class="devicon-javascript-plain" title="JavaScript"></i>
                 <i class="devicon-typescript-plain" title="TypeScript"></i>
                 <i class="devicon-vite-plain" title="Vite"></i>
+                <i class="devicon-git-plain" title="Git"></i>
                 <i class="devicon-github-original" title="GitHub"></i>
             </div>
             <h2>Código Fonte</h2>
